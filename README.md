@@ -23,6 +23,16 @@
 - The execution will begin.
 - After the execution check the Report/report.html for the execution status
 
+eg:
+      "cities": ["New York, NY, US","London"],
+      "range": "8"
+
+** To modify the input data 
+- open TestData/JSON/TestCases/test_compare_temps.json in notepad
+ - modify the first element of the cities with city of your choice for GUI layer. make sure the city should contain state and country as taken by accuweather
+ - modify the second element of the cities key with your choice for API layer temp.
+ - Modify the value under range to provide your choice of range value
+
 ##Pre-requisite
 
 - Operating System : Windows 10
