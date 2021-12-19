@@ -1,3 +1,4 @@
 {
-  "cities": ["Bengaluru, Karnataka, IN","Pune"]
+  "cities": ["Bengaluru, Karnataka, IN","Pune"],
+  "range": "5"
 }
