@@ -31,7 +31,7 @@ class TestCompareTemps(BaseTest):
         weatherpage = WeatherPage(driver)
         """fetching the current temperature of the city city1"""
         temp = weatherpage.get_city_temp()
-        logger.info(f"Got the temperature from GUI layer as  {temp} degree celsius")
+        logger.info(f"Got the temperature from GUI layer as  {temp} degree celsius for the city {city1}")
 
 
 
@@ -46,7 +46,7 @@ class TestCompareTemps(BaseTest):
         logger.info(f"Got the temperature from API layer as {temp1} degree celsius for teh city {city2}")
 
         """Comparator and Variance logic """
-        if abs(temp1-temp)>5:
+        if abs(temp1-temp)>float(self.testdata["range"]):
             raise TempExceedsRangeError("temp exceeded")
 
 
